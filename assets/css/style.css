@@ -1,0 +1,319 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', Times, serif;
+}
+header {
+    width: 100%;
+    background-color: greenyellow;
+    padding: 0 8%;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+nav a {
+    width: fit-content;
+    display:  flex;
+    justify-items: center;
+    align-items: center;
+    text-decoration: none;
+    color: rgba(7, 7, 7, 0.856);
+    padding: 12px 0;
+}
+nav a.logo{
+    font-size: 30px;
+}
+nav a.logo svg.size-6{
+    
+    width: 40px;
+    height: 40px;
+   /* background-color: aqua; */
+}
+header nav ul {
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li {
+    /* font-size: 16px; */
+    margin: 0 0 0 15px ;
+    list-style: none;
+    transition: color 10ms  ease-in-out;
+}
+header nav ul li a{
+    font-size: 18px;
+}
+
+header nav ul li a:hover{
+    opacity: 0.9;
+    color: rgba(59, 87, 5, 0.877);
+
+   
+}
+nav a.menu {
+    display: none;
+}
+
+/* mobile */
+
+
+@media (max-width: 575.98px) { 
+    nav a.menu {
+        display: block;
+    }
+    nav a.menu svg.size-6{
+    
+        width: 40px;
+        height: 40px;
+       /* background-color: aqua; */
+    }
+    header nav ul{
+        display: none;
+    }
+    section div h1{
+      font-size: 20px !important;
+
+      padding-top: 100px !important;
+    }
+    section div p{
+      font-size: 16px !important;
+    }
+ }
+
+ /* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {  
+    nav a.menu {
+        display: block;
+    }
+    nav a.menu svg.size-6{
+    
+        width: 40px;
+        height: 40px;
+       /* background-color: aqua; */
+    }
+    header nav ul{
+        display: none;
+    }
+    .grid {
+      
+      display: grid;
+      }
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {  }
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { }
+
+
+/* button */
+
+nav a.cnx {
+    padding: 12px 30px;
+    background-color: white;
+    border-radius: 5px;
+}
+nav a.cnx svg.size-6{
+    
+    width: 20px;
+    height: 20px;
+   /* background-color: aqua; */
+}
+
+
+.input-container {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .icon {
+    padding: 10px;
+    background: greenyellow;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+  }
+  
+  .input-field:focus {
+    border: 2px solid greenyellow;
+  }
+  
+  /* Set a style for the submit button */
+  .btn {
+    background-color: greenyellow;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .btn:hover {
+    opacity: 1;
+  }
+ 
+  section{
+ 
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0 , 0,0.5),rgba(0, 0 , 0,0.5),rgba(0, 0 , 0,0.5)),url('../images/bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color:yellowgreen;
+    text-align: center;
+  
+  }
+ 
+  section div{
+   
+    color: white;
+    width: 100%;
+    padding: 0 8%;
+    text-align: center;
+
+  }
+  section div h1{
+    padding: 12% 0 12px 0;
+    font-size: 35px;
+    /* margin: 12px 0; */
+
+  }
+  section div div{
+    width: 100%;
+    text-align: center;
+    margin: 0 0 30px 0;
+  }
+section div div p{
+    width: 90%;
+}
+section div a{
+    padding: 12px 30px ;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: yellowgreen;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+section div button:hover{
+    opacity: 0.9;
+}
+#all{
+    width: 100%;
+    padding: 30px  8% 0;
+}
+#all h1{
+    width: 100%;
+    text-align: center;
+    padding: 0 0  13px 0;
+}
+
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+   
+    font-family: arial;
+  }
+  
+  .title {
+    color: grey;
+    font-size: 18px;
+  }
+  
+  button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+  }
+  
+  button:hover, a:hover {
+    opacity: 0.7;
+  }
+
+  .grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  footer {
+    margin-top: 30px;
+    width: 100%;
+    padding: 0 8%;
+    text-align: center;
+  }
+
+  footer p {
+    padding: 12px 0 ;
+  }
+
+  footer hr {
+    border: none;
+    height: 3px;
+    background-color: yellowgreen;
+  }
+
+
+  .button{
+    padding-top: 20px;
+    width: 100%;
+    text-align: center;
+
+  }
+
+  .button button{
+    width: 150px;
+    background-color: yellowgreen;
+    padding: 12px 30px ;
+    font-size: 18px;
+    border-radius: 5px;
+  }
+
+  .erreur
+  {
+    color: red;
+    margin: 1px 0;
+    font-size: smaller;
+  }
+  .success{
+    color: green;
+    margin: 1px 0;
+    font-size: smaller;
+  }
